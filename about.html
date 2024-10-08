@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>About</h1>
+  <ul id="navegation" >
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+  <script src="script.js"></script>
+  <p>Welcome to Desire Looks, where fashion meets individuality. We curate the latest trends and timeless styles to help you express your unique look effortlessly. Our mission is to empower you to feel confident and stylish, every day.</p>
+  <h3> If you want a consultation with our personal stylist or have further questions please enter your information below.</h3>
+  <form id="customerForm" onsubmit="return validateForm()">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+  <span id="nameError" class="error"></span>
+  <br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <span id="emailError" class="error"></span>
+  <br>
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required pattern="^\d{10}$" placeholder="1234567890">
+  <span id="phoneError" class="error"></span>
+  <br>
+
+  <label for="address">Address:</label>
+  <input type="text" id="address" name="address" required maxlength="100">
+  <span id="addressError" class="error"></span>
+  <br>
+
+  <label for="city">City:</label>
+  <input type="text" id="city" name="city" required minlength="2" maxlength="50">
+  <span id="cityError" class="error"></span>
+  <br>
+
+  <label for="state">State:</label>
+  <input type="text" id="state" name="state" required minlength="2" maxlength="2" pattern="[A-Z]{2}">
+  <span id="stateError" class="error"></span>
+  <br>
+
+  <label for="zip">ZIP Code:</label>
+  <input type="text" id="zip" name="zip" required pattern="^\d{5}(-\d{4})?$" placeholder="12345 or 12345-6789">
+  <span id="zipError" class="error"></span>
+  <br>
+
+  <input type="submit" value="Submit">
+</form>
+  </body>
+  
+
+</html>
